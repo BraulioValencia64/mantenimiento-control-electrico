@@ -1,0 +1,337 @@
+/*
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+.afiche {
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.header {
+    background: linear-gradient(to right, #e24e3c, #e96759);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.header h1 {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 700;
+}
+.header h2 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.header .sub-header {
+    background-color: #ffc917;
+    color: #333;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.content {
+    background-color: #ffc917;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.service-item {
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #333;
+}
+.service-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    background-color: #2b70b3;
+    padding: 5px;
+    border-radius: 5px;
+}
+.qualities {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+}
+.quality-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+.quality-item .checkmark {
+    color: #28a745;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+.contact {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.contact h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.contact p {
+    font-size: 1.5em;
+    margin: 5px 0;
+    font-weight: 700;
+}
+.contact .location {
+    font-size: 0.9em;
+    margin-top: 15px;
+    font-style: italic;
+}
+.footer {
+    background-color: #e24e3c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+*/
+
+/* CSS para el cuerpo de la página */
+body {
+    margin: 0; /* Elimina el margen predeterminado del navegador */
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Fondo negro igual que las secciones */
+}
+
+/* Contenedor principal que ocupa la cuarta parte superior de la pantalla */
+.header-container {
+    width: 100%; /* Ocupa todo el ancho */
+    /* La altura es clave: 25vh = 25% del "viewport height" (altura visible de la pantalla) */
+    height: 25vh;
+    background-color: #000000; /* Fondo negro como en tu logo */
+    display: flex; /* Para centrar la imagen */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Estilos para la imagen del logo */
+.logo {
+    /* Ocupa el 100% del ancho del contenedor, asegurando que se ajuste */
+    width: 100%;
+    /* Ajusta la altura máxima para evitar que se desborde del 50vh */
+    max-height: 100%; 
+    /* Esto es importante: mantiene la proporción de la imagen */
+    object-fit: contain;
+}
+
+/* Estilo para el contenido de prueba */
+.content {
+    padding: 20px;
+}
+
+/* Estilos para la sección de expedientes técnicos */
+.technical-files {
+    background-color: #000000; /* Fondo negro */
+    padding: 30px;
+    color: #FFFFFF; /* Título en blanco */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.technical-files h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    color: #FFD700; /* Amarillo dorado */
+    text-align: center; /* Centrar el título */
+}
+
+.technical-files ul {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-left: 40px; /* Espacio para las viñetas */
+    list-style-type: disc; /* Viñetas tipo punto */
+}
+
+.technical-files li {
+    color: #FFFFFF; /* Letra blanca */
+    font-weight: bold; /* Letra en negrita */
+    margin-bottom: 8px; /* Espacio entre cada ítem */
+    font-size: 1.1em; /* Tamaño de letra aumentado */
+}
+
+/* Estilos para la sección de beneficios de renovar a tiempo */
+.renewal-benefits {
+    background-color: #000000; /* Fondo negro */
+    padding: 30px;
+    color: #FFFFFF; /* Título en blanco */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.renewal-benefits h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    color: #FFD700; /* Amarillo dorado */
+    text-align: center; /* Centrar el título */
+}
+
+.renewal-benefits ul {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-left: 40px; /* Espacio para las viñetas */
+    list-style-type: disc; /* Viñetas tipo punto */
+}
+
+.renewal-benefits li {
+    color: #FFFFFF; /* Letra blanca */
+    font-weight: bold; /* Letra en negrita */
+    margin-bottom: 8px; /* Espacio entre cada ítem */
+    font-size: 1.1em; /* Tamaño de letra aumentado */
+}
+
+/* Estilos para la sección de defensa civil */
+.civil-defense {
+    background-color: #000000; /* Fondo negro */
+    padding: 30px;
+    color: #FFFFFF; /* Título en blanco */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.civil-defense h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    color: #FFD700; /* Amarillo dorado */
+    text-align: center; /* Centrar el título */
+}
+
+.civil-defense .subtitle {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.civil-defense .section-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 15px 0 10px 0;
+}
+
+.civil-defense ul {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-left: 40px; /* Espacio para las viñetas */
+    list-style-type: disc; /* Viñetas tipo punto */
+}
+
+.civil-defense li {
+    color: #FFFFFF; /* Letra blanca */
+    font-weight: bold; /* Letra en negrita */
+    margin-bottom: 8px; /* Espacio entre cada ítem */
+    font-size: 1.1em; /* Tamaño de letra aumentado */
+}
+
+/* Estilos para el contenedor (simulando tu fondo negro) */
+.services {
+    background-color: #000000; /* Fondo negro */
+    padding: 30px;
+    color: #FFFFFF; /* Título en blanco */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.services h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    color: #FFD700; /* Amarillo dorado */
+    text-align: center; /* Centrar el título */
+}
+
+/* Estilos para la lista no ordenada (<ul>) */
+.services ul {
+    /* Elimina los márgenes predeterminados para una mejor alineación */
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-left: 40px; /* Espacio para las viñetas */
+    list-style-type: disc; /* Asegura que la viñeta sea un punto */
+}
+
+/* Estilos para cada elemento de la lista (<li>) */
+.services li {
+    color: #FFFFFF; /* Letra blanca */
+    font-weight: bold; /* Letra en negrita */
+    margin-bottom: 8px; /* Espacio entre cada ítem */
+    font-size: 1.1em; /* Tamaño de letra aumentado */
+}
+
+/* Estilos para la sección de elaboración de pozos a tierra */
+.electrical-systems-grounding {
+    background-color: #000000; /* Fondo negro */
+    padding: 30px;
+    color: #FFFFFF; /* Título en blanco */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.electrical-systems-grounding h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    color: #FFD700; /* Amarillo dorado */
+    text-align: center; /* Centrar el título */
+}
+
+.electrical-systems-grounding ul {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-left: 40px; /* Espacio para las viñetas */
+    list-style-type: disc; /* Viñetas tipo punto */
+}
+
+.electrical-systems-grounding li {
+    color: #FFFFFF; /* Letra blanca */
+    font-weight: bold; /* Letra en negrita */
+    margin-bottom: 8px; /* Espacio entre cada ítem */
+    font-size: 1.1em; /* Tamaño de letra aumentado */
+}
+
+/* Estilos para el footer de contacto */
+.contact-footer {
+    background-color: #1E3A8A; /* Fondo azul oscuro */
+    color: #FFFFFF; /* Letra blanca */
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 0;
+}
+
+.contact-footer h3 {
+    font-size: 1.8em;
+    font-weight: bold; /* Negrita */
+    margin: 0 0 15px 0;
+    color: #FFD700; /* Amarillo dorado para contraste */
+}
+
+.contact-footer p {
+    font-size: 1.8em;
+    font-weight: bold; /* Negrita */
+    margin: 10px 0;
+    color: #FFFFFF;
+}
