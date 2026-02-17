@@ -123,6 +123,7 @@
                 <p>✉️ info@mantenimientoycontrolelectrico.com</p>
             </div>
         </div>
+        <p class="contact-location">Arequipa - Perú</p>
     </footer>
     @if (Route::has('login'))
         <div class="h-14.5 hidden lg:block"></div>

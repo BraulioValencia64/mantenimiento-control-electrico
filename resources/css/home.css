@@ -119,7 +119,10 @@ body {
     width: 100%; /* Ocupa todo el ancho */
     height: 25vh;
     background-color: #000000; /* Fondo negro como en tu logo */
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
     overflow: hidden;
 }
 
@@ -151,6 +154,7 @@ body {
     color: #FFFFFF; /* Título en blanco */
     max-width: 1200px; /* Ancho máximo */
     margin: 0 auto; /* Centrado horizontal */
+    margin-top: 25vh; /* Compensa la altura del banner fijo */
 }
 
 .technical-files h3 {
@@ -164,8 +168,8 @@ body {
 .technical-files ul {
     margin-top: 15px;
     margin-bottom: 0;
-    padding-left: 40px; /* Espacio para las viñetas */
-    list-style-type: disc; /* Viñetas tipo punto */
+    padding-left: 20px;
+    list-style-type: none;
 }
 
 .technical-files li {
@@ -195,8 +199,8 @@ body {
 .renewal-benefits ul {
     margin-top: 15px;
     margin-bottom: 0;
-    padding-left: 40px; /* Espacio para las viñetas */
-    list-style-type: disc; /* Viñetas tipo punto */
+    padding-left: 20px;
+    list-style-type: none;
 }
 
 .renewal-benefits li {
@@ -241,8 +245,8 @@ body {
 .civil-defense ul {
     margin-top: 15px;
     margin-bottom: 0;
-    padding-left: 40px; /* Espacio para las viñetas */
-    list-style-type: disc; /* Viñetas tipo punto */
+    padding-left: 20px;
+    list-style-type: none;
 }
 
 .civil-defense li {
@@ -274,8 +278,8 @@ body {
     /* Elimina los márgenes predeterminados para una mejor alineación */
     margin-top: 15px;
     margin-bottom: 0;
-    padding-left: 40px; /* Espacio para las viñetas */
-    list-style-type: disc; /* Asegura que la viñeta sea un punto */
+    padding-left: 20px;
+    list-style-type: none;
 }
 
 /* Estilos para cada elemento de la lista (<li>) */
@@ -306,8 +310,8 @@ body {
 .electrical-systems-grounding ul {
     margin-top: 15px;
     margin-bottom: 0;
-    padding-left: 40px; /* Espacio para las viñetas */
-    list-style-type: disc; /* Viñetas tipo punto */
+    padding-left: 20px;
+    list-style-type: none;
 }
 
 .electrical-systems-grounding li {
@@ -319,7 +323,7 @@ body {
 
 /* Estilos para el footer de contacto */
 .contact-footer {
-    background-color: #1E3A8A; /* Fondo azul oscuro */
+    background-color: #2B70B3; /* Azul del logo */
     color: #FFFFFF; /* Letra blanca */
     text-align: center;
     padding: 30px 20px;
@@ -346,6 +350,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.contact-footer .contact-location {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-weight: normal;
 }
 
 .contact-footer p {

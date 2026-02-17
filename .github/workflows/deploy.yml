@@ -19,4 +19,4 @@ jobs:
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            cd /var/www/production/mantenimiento-control-electrico && git checkout production; git restore .; git pull;
+            cd /var/www/production/mantenimiento-control-electrico && git checkout production; git restore .; git pull; npm run build;
