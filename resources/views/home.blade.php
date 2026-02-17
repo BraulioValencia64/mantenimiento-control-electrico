@@ -93,11 +93,6 @@
         </ul>
     </div>
 
-<!--     <div class="content">
-        <h1>El resto de tu contenido web</h1>
-        <p>Este espacio comienza justo debajo del logo, en la segunda mitad de la pantalla.</p>
-    </div> -->
-
 <!-- <div class="afiche">
     <div class="header">
         <h1>¿NO PASASTE TU INSPECCIÓN<br>DE DEFENSA CIVIL?</h1>
@@ -160,9 +155,16 @@
 
     <footer class="contact-footer">
         <h3>CONTÁCTANOS HOY:</h3>
-        <p>📞 932 040 622</p>
-        <p>📞 918 283 608</p>
-        <p>📞 925 870 800</p>
+        <div class="contact-columns">
+            <div class="contact-col">
+                <p>📞 932 040 622</p>
+                <p>📞 918 283 608</p>
+                <p>📞 925 870 800</p>
+            </div>
+            <div class="contact-col">
+                <p>✉️ info@mantenimientoycontrolelectrico.com</p>
+            </div>
+        </div>
     </footer>
     @if (Route::has('login'))
         <div class="h-14.5 hidden lg:block"></div>

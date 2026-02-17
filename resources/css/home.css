@@ -329,6 +329,21 @@ body {
     color: #FFD700; /* Amarillo dorado para contraste */
 }
 
+.contact-footer .contact-columns {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-footer .contact-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contact-footer p {
     font-size: 1.8em;
     font-weight: bold; /* Negrita */
